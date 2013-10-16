@@ -20,8 +20,10 @@ public class Model
 	private static final boolean IS_DEBUGGING = true;
 	/**
 	 * The width of the waterfall
+	 * updated 10/15/13 by Armstrong for Wonderfall 2.0
 	 */
-	public static final int NUMBER_OF_VALVES = 16;
+	//public static final int NUMBER_OF_VALVES = 16;
+	public static final int NUMBER_OF_VALVES = 32;
 	
 	private Model() throws IOException
 	{

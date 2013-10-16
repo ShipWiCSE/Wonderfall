@@ -28,7 +28,11 @@ public class WaterfallRunner
     
     //defines the size of the grid the user can draw on
     //width should stay 16, but height can be adjusted to whatever
-    private final static int MAX_WIDTH = 16;
+    //private final static int MAX_WIDTH = 16;
+    
+    //update: Armstrong 10/15/13
+    //expand to 32 valves
+    private final static int MAX_WIDTH = 32;
     private final static int MAX_HEIGHT = 1024;
     
     //create a button group to control all the letters/numbers at once
@@ -410,7 +414,7 @@ public class WaterfallRunner
                                                 {
                                                     clickButton(temp1+x, temp2-(4-y));
                                                 }
-                                                else if(y > 4 && temp2+(y-4) < 16 && line.charAt(y) == 'X')
+                                                else if(y > 4 && temp2+(y-4) < MAX_WIDTH && line.charAt(y) == 'X')
                                                 {
                                                     clickButton(temp1+x, temp2+(y-4));
                                                 }
